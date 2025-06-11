@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build:
+      context: crane-frontend
+      dockerfile: docker/Dockerfile
+    image: frontend
+    ports:
+      - "8080:80"
+    environment:
+      - NGINX_ENTRYPOINT_QUIET_LOGS=1
+
+  backend:
+    build: 
+      context: crane-backend
+      dockerfile: docker/Dockerfile
+    image: backend
+    ports:
+      - "8081:8081"

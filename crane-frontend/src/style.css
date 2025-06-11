@@ -1,0 +1,24 @@
+body {
+  overflow: hidden;
+  margin: 0px;
+}
+
+#debug {
+  font-family: monospace;
+  font-size: larger;
+  position: absolute;
+  left: 10px;
+  top: 300px;
+  border: 1px solid red;
+  padding: 10px;
+  width: 150px;
+  height: 340px;
+  color: red;
+  pointer-events: none;
+}
+
+#connect_btn {
+  position: absolute;
+  left: 3px;
+  top: 50px;
+}
